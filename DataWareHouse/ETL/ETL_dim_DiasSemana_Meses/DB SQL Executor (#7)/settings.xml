@@ -7,7 +7,7 @@
     </config>
     <config key="model">
         <entry key="statementSeparator" type="xstring" value=";"/>
-        <entry key="statement" type="xstring" value="delete from ComprasDataWareHouse.dbo.fac_compras;%%00010delete from ComprasDataWareHouse.dbo.dim_fechas;%%00010delete from ComprasDataWareHouse.dbo.dim_meses;%%00010DBCC CHECKIDENT ('dbo.dim_meses', RESEED, 0);%%00010%%00010INSERT INTO ComprasDataWareHouse.dbo.dim_meses %%00010(NomMes, NomCortoMes)%%00010VALUES%%00010('Enero', 'ENE'),%%00010('Febrero', 'FEB'),%%00010('Marzo', 'MAR'),%%00010('Abril', 'ABR'),%%00010('Mayo', 'MAY'),%%00010('Junio', 'JUN'),%%00010('Julio', 'JUL'),%%00010('Agosto', 'AGO'),%%00010('Septiembre', 'SEP'),%%00010('Octubre', 'OCT'),%%00010('Noviembre', 'NOV'),%%00010('Diciembre', 'DIC')"/>
+        <entry key="statement" type="xstring" value="INSERT INTO ComprasDataWareHouse.dbo.dim_meses %%00010(NomMes, NomCortoMes)%%00010VALUES%%00010('Enero', 'ENE'),%%00010('Febrero', 'FEB'),%%00010('Marzo', 'MAR'),%%00010('Abril', 'ABR'),%%00010('Mayo', 'MAY'),%%00010('Junio', 'JUN'),%%00010('Julio', 'JUL'),%%00010('Agosto', 'AGO'),%%00010('Septiembre', 'SEP'),%%00010('Octubre', 'OCT'),%%00010('Noviembre', 'NOV'),%%00010('Diciembre', 'DIC')"/>
         <config key="multipleStatement_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -30,7 +30,7 @@
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.database.node.manipulation.executor.DBExecutorNodeFactory"/>
     <entry key="node-name" type="xstring" value="DB SQL Executor"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME database nodes"/>
@@ -43,16 +43,21 @@
     <entry key="node-feature-version" type="xstring" value="5.4.4.v202504301444"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="DB SQL Executor"/>
-    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBSessionPortObjectSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBSessionPortObject"/>
+            <entry key="port_object_summary" type="xstring" value="Microsoft SQL Server 9c27b2b7-abf9-4c4c-ac41-f50c83b24c8d"/>
+            <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
+            <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="dfc5a347-0658-4be8-94e4-757529359db3"/>
     </config>
 </config>
