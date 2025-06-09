@@ -8,10 +8,10 @@
         <entry key="authored-by" type="xstring" value="lhob9"/>
         <entry key="authored-when" type="xstring" value="2025-06-03 20:11:54 -0500"/>
         <entry key="lastEdited-by" type="xstring" value="lhob9"/>
-        <entry key="lastEdited-when" type="xstring" value="2025-06-03 20:20:20 -0500"/>
+        <entry key="lastEdited-when" type="xstring" value="2025-06-08 21:18:24 -0500"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <config key="workflow_credentials"/>
     <config key="annotations">
         <config key="annotation_0">
@@ -239,5 +239,14 @@
                 <entry key="extrainfo.conn.bendpoints_size" type="xint" value="0"/>
             </config>
         </config>
+    </config>
+    <config key="workflow_editor_settings">
+        <entry key="workflow.editor.snapToGrid" type="xboolean" value="false"/>
+        <entry key="workflow.editor.ShowGrid" type="xboolean" value="false"/>
+        <entry key="workflow.editor.gridX" type="xint" value="-1"/>
+        <entry key="workflow.editor.gridY" type="xint" value="-1"/>
+        <entry key="workflow.editor.zoomLevel" type="xdouble" value="1.0"/>
+        <entry key="workflow.editor.curvedConnections" type="xboolean" value="false"/>
+        <entry key="workflow.editor.connectionWidth" type="xint" value="1"/>
     </config>
 </config>
